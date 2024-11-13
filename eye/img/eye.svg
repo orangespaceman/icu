@@ -1,0 +1,21 @@
+<svg viewBox="0 0 500 200">
+  <defs>
+    <radialGradient id="eye-gradient">
+      <stop offset="10%" stop-color="aqua" />
+      <stop offset="95%" stop-color="aquamarine" />
+    </radialGradient>
+    <path id="eye-path" />
+  </defs>
+  <mask id="mask-eye">
+    <use href="#eye-path" fill="#ffffff" stroke="#000000" stroke-width="5px" />
+  </mask>
+  <g id="eye-lashes">
+  </g>
+  <g id="eye">
+    <use href="#eye-path" fill="#ffffff" stroke="#000000" stroke-width="5px" />
+  </g>
+  <g id="eyeball" mask="url(#mask-eye)">
+    <circle id="eyeball-iris" cx="225px" cy="100px" r="75px" fill="url('#eye-gradient')" stroke="#000000" stroke-width="5px"></circle>
+    <circle id="eyeball-pupil" cx="225px" cy="100px" r="25px" fill="#000000" stroke="#000000"></circle>
+  </g>
+</svg>

@@ -1,0 +1,84 @@
+html,
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  font-size: 60px;
+  position: fixed;
+  top: 0;
+  right: 10px;
+  margin: 0;
+}
+
+#svg-wrapper {
+  width: 60%;
+}
+
+/* debug */
+
+#debug-panel {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 20%;
+  opacity: 0.1;
+  transform: translateY(99%);
+  transition: all 0.5s;
+}
+
+#debug-panel.open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#debug-video {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+#debug-values {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+#debug-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#debug-toggle {
+  appearance: none;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  background: white;
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#debug-toggle:hover,
+#debug-toggle.active {
+  background: black;
+  color: white;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/face.css" rel="stylesheet" />
+    <link rel="icon" href="./img/favicon.png" />
+
+    <meta
+      name="description"
+      content="An experiment with a webcam, face detection and web speech"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:url" content="https://orangespaceman.github.io/icu/bear/" />
+    <meta property="og:title" content="ICU" />
+    <meta
+      property="og:description"
+      content="An experiment with a webcam, face detection and web speech"
+    />
+    <meta
+      property="og:image"
+      content="https://orangespaceman.github.io/icu/bear/img/favicon.png"
+    />
+
+    <meta name="theme-color" content="#ac9989" />
+
+    <title>I C U</title>
+  </head>
+  <body>
+    <h1 id="title">I C U</h1>
+
+    <div id="bear">
+      <img id="bear-bg" src="./img/bear.webp" alt="" />
+      <div id="eyes">
+        <div id="left-eye"></div>
+        <div id="right-eye"></div>
+      </div>
+    </div>
+
+    <div id="sound">
+      <button id="sound-toggle"></button>
+      <img id="sound-pointer" src="./img/pointer.svg" alt="" />
+    </div>
+
+    <button id="debug-toggle">Debug</button>
+    <div id="debug-panel">
+      <video id="debug-video" autoplay muted playsinline></video>
+      <canvas id="debug-overlay"></canvas>
+      <div id="debug-values"></div>
+    </div>
+
+    <script src="./js/lib/face-api.min.js"></script>
+    <script type="module" src="./js/init.js"></script>
+    <script src="https://orangespaceman.github.io/lab-badge/lab-badge.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<svg viewBox="0 0 100 100">
+  <defs>
+    <path id="eye-path" path="M10,50 C10,50 0,45 90,50 C90,50 0,50 10,48" />
+  </defs>
+  <mask id="mask-eye">
+    <use href="#eye-path" fill="#ffffff" />
+  </mask>
+  <g id="eye-lashes">
+  </g>
+  <g id="eye">
+    <use href="#eye-path" fill="#ffffff" stroke="#1c0101" stroke-width="5" />
+  </g>
+  <g id="eyeball" mask="url(#mask-eye)">
+    <circle id="eyeball-pupil" cx="50px" cy="50px" r="15px" fill="#1c0101"></circle>
+  </g>
+</svg>
